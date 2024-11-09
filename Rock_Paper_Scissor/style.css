@@ -1,0 +1,106 @@
+#header{
+    display: flex;
+    /* height: 100px; */
+    text-align: center;
+    justify-content: center;
+    line-height: 100px;
+    background-color: #333;
+    color:aliceblue;
+    font-size:60px;
+}
+#container{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+.choice{
+    height: 130px;
+    width: 130px;
+    background-color: #8df1f3;
+    color:aliceblue;
+    font-size:60px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 100px;
+    transition: 0.1s;
+    margin-top: 40px ;
+}
+.choice:hover{
+    cursor: pointer;
+    opacity: 0.5;
+    border: 2px solid #043051;
+}
+#score_box{
+    margin-top:30px;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap:30px;
+    height: 200px;
+    background-color: #c0f3de;
+    color:aliceblue;
+    font-size:20px;
+    text-align: center;
+}
+.net_score{
+    display: flex;
+    flex-direction: column;;
+    align-items:center;
+    justify-content:center;
+    gap:10;
+    height: 100px;
+    width: 100px;
+    background-color: #043051;
+    color:aliceblue;
+    /* font-size:px; */
+    border-radius: 5%;
+}
+#message{
+    display: flex;
+    align-self:center;
+    margin-top:10px;
+    height: 70px;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    color:rgb(255, 79, 170);
+    /* margin-left: 50%;
+    transform: translateX(-50%); */
+    
+}
+#rock{
+    
+    background-image: url("./images/rock.png");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+#paper{
+    background-image: url("./images/paper.png");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+#scissor{
+    background-image: url("./images/scissors.png");
+    background-size: cover;
+    background-position-x: center;
+    background-position-y: center;
+}
+#new_game{
+    /* position:fixed; */
+    display: flex;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    margin-top: 10px;
+    height: 50px;
+    border-radius: 20%;
+    text-align: center;
+    justify-content: center;
+    font-size: 30px;
+    color:rgb(255, 79, 170);
+    cursor: pointer
+}
