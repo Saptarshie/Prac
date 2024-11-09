@@ -1,0 +1,228 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: black;
+}
+main{
+    height: 80vh;
+    /* display: flex; */
+    background-image:url("images/bg.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    /* width : max(1200px, 100vw); */
+    width:100vw;
+}
+/* #logo{
+    background-image: url("images/logo.svg");
+    background-position:center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 70px;
+} */
+nav{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    /* width:90vw; */
+    position: absolute;
+    width: 100%;
+    height: 15%;
+    border-width: 4px;
+    /* background-color: rgba(183, 243, 239, 0.587); */
+    border-color: coral;
+    /* z-index: 10; */
+}
+nav > span > button{
+    background-color: transparent;
+    border: none;
+    font-size: 13px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.5s;
+    border:3px solid white;
+    padding: 4px;
+    border-radius: 6px;
+}
+nav :nth-child(2) :nth-child(2){
+    background-color: red;
+}
+nav > span > button:focus{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    transition: 0.5s
+}
+nav > span > button:hover{
+    color: rgb(255, 255, 255);
+    font-size: 25px;
+    transition: 0.5s;
+}
+nav > span > button:active{
+    color: rgb(255, 255, 255);
+    font-size: 30px;
+}
+#main_content{
+    display: flex;
+    position: absolute;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    top:15%;
+    height: 65%;
+    width: 100%;
+}
+#main_content > h1{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+#main_content > h2,h3{
+    color: aliceblue;
+}
+#main_content > div{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 94%;
+}
+#main_content > div > input{
+    width: 40%;
+    background-color: rgba(232, 244, 254, 0.781);
+    border-radius: 10px;
+    padding: 3px;
+    height: 30px;
+    color: rgb(9, 9, 95);
+}
+#main_content > div > input:focus{
+    width:42%;
+    height:32px;
+}
+#main_content > div > button{
+    background-color: red;
+    color: white;
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 3px;
+}
+.sep{
+    width: 100vw;
+    height: 6px;
+    background-color:aqua;
+    z-index: 500;
+}
+section{
+    width: 100vw;;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+section > div{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    /* gap : 15vw; */
+    width: 70vw;
+    /* height: 100%; */
+}
+.first{
+    display: flex;
+    width:100vw;
+}
+.first  h1,h2{
+    margin: 7%;
+    color: white;
+    width : 90vw;
+    text-align : center;
+}
+.first h1{
+    font-size: 7vw;;
+    font-family:cursive;
+    text-align: center;
+    padding: 5vw;
+}
+.first  h2{
+    font-size: 3vw;
+    font-family:cursive;
+    text-align: center;
+    padding: 5vw;
+
+}
+.first span{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.myimg{
+    width : 50%;
+    /* height: 70%; */
+    /* position: absolute; */
+    display: grid;
+    grid: 1fr;
+}
+.myimg img{
+    /* position: relative; */
+    grid-area: 1 / 1;
+    width: 100%;
+    /* z-index: 10; */
+    top:0px;
+}
+.myimg video{
+    /* position: relative; */
+    grid-area: 1 / 1;
+    top: 0px;
+    width: 100%;
+}
+.faq{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    /* height: 100%; */
+}
+/* .faq > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+    width: 100vw;
+    height: 100%;
+} */
+.faq > h1{
+    padding:6vh;
+    font-size: 50px;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+.faq > div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 90vw;
+}
+.faq_item > .que{
+    display: flex;
+    height: 50px;
+    width: 90%;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(206, 243, 246, 0.381);
+    border-radius: 10px;
+    padding: 5px;
+    margin: 5px;
+}
+.faq_item > .que > button{
+    font-size: 5vh;
+    padding: 1px;
+    font-weight: 600;
+    margin: 6px;
+    border: none;
+    border-radius: 20%;
+    background-color: rgba(187, 248, 232, 0.477);
+}
